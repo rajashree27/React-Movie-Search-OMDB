@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 34px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.searchBox{
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 20px;
+    width: 40%;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.searchIcon{
+    width: 30px;
+    height: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.searchInput{
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.movieListContainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: space-evenly;
+    gap: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movieContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 280px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.poster{
+    height: 362px;
+    object-fit: cover;
+}
+
+.movieName{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin: 15px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.movieInfo{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
 }
